@@ -1,20 +1,45 @@
-* {
-    box-sizing: border-box;
-}
-
-.container {
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.container > div {
+.gridContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    width: 85vh;
     border: 1px solid black;
-    width: 25px;
-    height: 25px;
 }
 
-.container > div:nth-child(16n+1) {
-    width: 100%;
-    border: 0;
-    height: 0;
+.btnContainer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    min-width: 200px;
+}
+
+.resize {
+    height: 50px;
+    width: 250px;
+    font-size: 30px;
+}
+
+.flex {
+    flex: 1;
+}
+
+.row {
+    display: flex;
 }
