@@ -20,7 +20,7 @@ grid.addEventListener('mouseover', (event) => {
     let target = event.target;
     if (target !== grid && !target.classList.contains('row')){
         target.style.backgroundColor = randomColor();
-        target.style.opacity = (parseFloat(target.style.opacity) || 0) + 0.2;
+        target.style.opacity = (parseFloat(target.style.opacity) || 0) + 0.5;
     }
 });
 
